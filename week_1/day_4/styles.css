@@ -1,0 +1,32 @@
+/* con este selector lo que hace es que los ajustes que le pongamos adentro los ca colocar en toda nuestra pagina */
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title_1 { color: chartreuse;}
+.title_2 { color: burlywood;}
+.title_3 { color: aqua;
+        background-color: coral;
+        margin: 20px;}
+#title {background: rebeccapurple !important;}
+/* el important lo que hace es pisar todos los colores y que sean todos del color que se le especifico con el important */
+
+h6 {color: rgb(255, 7, 7);}
+
+
+/*  .  mas lo que sea es una clase */
+/*  #  y el numral es un id  */
+/*  con la estiqueta sola se llama a todos los que tengan esa etiqueta */
+
+a {color: aquamarine;}
+/* con este hago que luego de la primera visita cambie de color */
+a:visited{color: blue;}
+/* para que cuando el mause este por encima el fondo detras de el enlace cambie */
+a:hover{background: blueviolet;}
+
+
+
+
+

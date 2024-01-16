@@ -1,0 +1,46 @@
+a:visited{ color: aliceblue;
+}
+a:hover{ background-color: yellowgreen;}
+p{color: blue;}
+p :first-child{color: yellow;}
+p:last-child{color: violet;}
+p:nth-child(2){color: springgreen;
+font-size: 20px;}
+p:nth-child(even){background-color: silver;}
+p:nth-child(odd){background-color: rgb(136, 47, 185);}
+/* con esto se hace que todas las primeras letras sean mayusculas */
+p::first-letter{font-size: 30px;}
+/* si los todas las figuras van a ser iguales conviene configurar todo eso en general y no uno por uno  */
+.div{
+    border: dashed 5px red;
+    margin: 20px;
+    padding: 20px;
+}
+.cuadrado{
+        width: 50px;
+        height: 50px;
+        background: violet;
+        border: 2px solid blue;
+        border-radius:  0px;}
+/* colocandole una coma podes hacer que un objeto erede caracteristicas de otro  */
+.cuadrado_redondeado , .circulo
+    {
+    width: 50px;
+    height: 50px;
+    background: violet;
+    border: 2px solid black;
+    border-radius:  10px;
+    }
+.circulo {
+    /* width: 50px;
+    height: 50px;
+    background: violet;
+    border: 2px solid black; */
+    border-radius:  50%; 
+    box-shadow:10px 5px 5px black;}
+    /* es exactamente lo mismo para hacer el circulo con % o px */
+
+
+
+
+
