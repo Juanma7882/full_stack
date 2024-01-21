@@ -1,0 +1,82 @@
+
+body{ background-color: black;}
+
+.div{
+    border: dashed 5px red;
+    margin: 20px;
+    padding: 20px;}
+
+.botton_cuadrado{ 
+                height: 50px;
+                width: 100px;
+                display: flex;
+                background-color: aqua;
+                align-items: center;
+                justify-content: center;
+                border:4px solid green;
+                position: absolute;
+                top: 100px;
+                left: 0px;
+                } 
+.botton_redondeado{
+                    height: 50px;
+                    width: 150px;
+                    display: flex;
+                    background-color: blue;
+                    border-radius: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    color: rgb(168, 168, 0);
+                    position: absolute;
+                    top: 100px;
+                    left: 180px;
+
+                }
+                
+.boton_circular{
+                height: 100px;
+                width: 100px;
+                display: flex;
+                background-color: rgb(135, 0, 0);
+                border-radius: 50px;
+                align-items: center;
+                justify-content: center;
+                color: rgb(181, 131, 140);
+                position: absolute;
+                top: 100px;
+                left: 400px;
+}
+.boton_trasparente{
+    width: 150px;
+    height: 50px;
+    display: flex;
+    /* background-color: rgb(47, 3, 91); */
+    border: 4px solid palevioletred;
+    color: rgb(124, 223, 223);
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    left: 600px;
+}
+
+.boton_hover {
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease; /* Agregamos una transición para suavizar el cambio de color */
+    position: absolute;
+    top: 100px;
+    left: 820px;
+}
+
+.boton_hover:hover {
+    background-color: darkcyan; /* Cambiamos el color de fondo al hacer hover */
+    color: darkorange; /* Cambiamos el color del texto al hacer hover */
+}

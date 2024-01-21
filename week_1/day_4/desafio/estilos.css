@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.barra_principal {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(20, 153, 254);
+    /* box-sizing: border-box;
+    text-decoration: none;
+    list-style: none; */
+}
+
+.nav-item {
+    height: 35px;
+    width: 7%;
+    display: flex;
+    /* background-color: rgb(20, 153, 254); */
+    background-color: rgb(20, 153, 254);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12px;
+    transition: background-color 0.3s
+}
+
+.nav-item:hover {
+    background-color: rgb(81, 206, 255);
+}
+.Home { left: 500px; }
+.About { left: 600px; }
+.Services { left: 700px; }
+.Contact { left: 800px; }
+.Feedback { left: 900px; width: 8%; }
+
+.menu {
+    background-color: #333;
+    padding: 15px;
+    width: 200px;
+}
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    top: 50px;
+
+}
+
+.menu a:hover {
+    background-color: #555;
+}
