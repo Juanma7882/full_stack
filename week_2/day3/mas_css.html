@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+
+    <link rel="stylesheet" href="./css/styles_2.css" />
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <div class="linea-horizontal"></div>
+    <h2>selectores de css</h2>
+    <h3>Seletor de ID:</h3>
+
+    <p>
+      El selector de ID se lo utiliza a un elemento unico no debe haber 2 ID
+      iguales
+    </p>
+    <h3>selector de clase:</h3>
+    <p>
+      el selector de clase se utiliza para darle un mismo estilo a diferentes
+      elementos
+    </p>
+    <p>le podemos asignar 2 nombres de clase a un elemento</p>
+    <h3>convinador decendiente</h3>
+    <p>
+      el convinador decendiente es cuando tenemos un elemento al cual anidamos
+      dentro de otro y siempre y cuando se cumpla esto sin importar si hay algun
+      otra etiqueta de pormedio este estilo se va aplicar y se utiliza el
+      espacio para escribir este estilo por ejemplo: div p
+    </p>
+    <h3>convinador de hijo directo</h3>
+    <p>
+      este convinador solo se aplica cuando estrictamente esta uno anidado
+      dentro y seguido del otro si llega a estar otra etiqueta de por medio este
+      estilo no se aplica en el sig ejemplo seria todos menos 4 el convinador de
+      hijo directo y se escrive de la siguiente forma por ejemplo: div > p
+    </p>
+    <div>
+      <p>parrafo 1</p>
+      <p>parrafo 2</p>
+      <div>
+        <p>parrafo 3</p>
+      </div>
+      <div>
+        <section>
+          <p>parrafo 4</p>
+        </section>
+      </div>
+    </div>
+    <h3>conbinador de hermano adyacente</h3>
+    <p>
+      selecciona al elemento adyancente del promer elemento que comparte el
+      mismo elemento padre adyacente (son elementos hermanos). se aplica
+      utilizando el simbolo +
+    </p>
+    <h3>conbinador general de hermanos</h3>
+    <p>
+      selecciona a un elemento<b>hermano</b> que este colocado <b>luego</b> del
+      primer elemento (no necesariamente de forma adyacente) que comparte el
+      mismo elemnto padre se aplica utilizando el simbolo ~
+    </p>
+    <div class="conbinadores">
+      <img src="img/tigre.jpg" alt="#" />
+      <div class="boton">inicio</div>
+      <div class="boton">menu</div>
+      <div class="boton">regresar</div>
+      <h3>si desea contactarme aprete el sig boton</h3>
+      <div class="boton">contactarme</div>
+      <div><div class="boton">contactarme</div></div>
+    </div>
+    <h2>Unidades de medida</h2>
+    <div class="linea-horizontal"></div>
+    <p>
+      la unidad de medida mas usada son los pixeles(px) pero exites mas como los
+      cm, mm, in(pulgadas), pt(texto en puntos), pc(picas). existen 2 grandes
+      tipos de unidades que podemos usar las unidades absolutas y las unidades
+      relativas que seran explicadas acontinuacion.
+      <b>por defecto se utiliza un tamaño de 16px</b>
+      <b
+        >algo importante es que cada una de las unidades de medida pueden ser
+        trabajas con decimales por ejemplo 1.2px</b
+      >
+    </p>
+    <h3>unidades relativas</h3>
+    <p>
+      <b>em:</b> relativo al tamaño de <b>fuente</b> de un elemento si, por
+      ejemplo, utilizamos 3em (font-size:3em); mi texto aumentara 3 veces su
+      tamaño en relacion al tamaño que se este utilizando por defecto en la
+      clase padre que lo contenga un ejemplo rapido seria si la clase padre
+      tiene un font-zice de 32px 1em va valer 32px
+    </p>
+    <p>
+      <b>rem:</b>es igual a (em) con la diferenca de que este actua en la raiz o
+      sea en la letra que este utilizando por defecto y para cambiarla abria que
+      cambiarla con la etiqueta html en los ajustes generales del css
+    </p>
+    <div class="container">
+      <p class="paragraph">primer parrafo</p>
+      <div class="box">Caja de ejemplo</div>
+    </div>
+
+    <div class="container">
+      <div class="em">em</div>
+      <div class="rem">rem</div>
+    </div>
+    <div>
+      <p class="x">%: toma un porcentaje del tamaño del elemento padre.</p>
+    </div>
+    <div class="caja">
+      <div class="incaja"></div>
+    </div>
+    <div><p class="x">vh: porcentaje relativo a la altura del viewport</p></div>
+    <div><p class="x">vw: porcentaje relativo a lo ancho del viewport</p></div>
+    <h3>background</h3>
+    <div class="linea-horizontal"></div>
+    <!-- <div class="caja imagen"></div> -->
+    <p>imagen en un div</p>
+    <div class="caja imagen"></div>
+    <h2>background repeat</h2>
+    <p>todas las imagenes estan en repeat por defecto</p>
+    <div class="caja repite"></div>
+    <h2>background attachment</h2>
+    <div class="caja attach"></div>
+    <h3>box shadow</h3>
+    <div class="linea-horizontal"></div>
+    <br />
+    <p>offset-xy</p>
+    <div class="caja offset-xy"></div>
+    <p>blur</p>
+    <div class="caja blur"></div>
+    <p>spread</p>
+    <div class="caja spread"></div>
+
+    <p>color</p>
+    <div class="caja color"></div>
+    <p>inset</p>
+    <div class="caja inset"></div>
+    <h3>tipografias</h3>
+    <div class="linea-horizontal"></div>
+    <div>
+      <p>font-family: definimos la familia de la fuente</p>
+    </div>
+
+    <div>
+      <p>
+        font-weight: definimos el peso de la fuente si va ser mas finita o mas
+        gruesa
+      </p>
+    </div>
+    <div>
+      <p>font-style: normal/italic/oblique</p>
+      <div class="caja-texto">font-family</div>
+    </div>
+    <div>
+      <p>font-size: tamaño de fuente</p>
+    </div>
+    <div class="juan">
+      <p>letter-spacing: espaciado entre letras</p>
+    </div>
+    <div class="juan">
+      <p>word-spancing: espaciado entre palabras</p>
+    </div>
+    <div class="juan">
+      <p>line-height: distancia entre renglones</p>
+    </div>
+    <div>
+      <p>text-transform: puede poner el texto en lowercase capitaliza etc</p>
+    </div>
+    <div>
+      <p>
+        text-decoration: es capaz de ponerle o sacarle el subrrallado a un
+        parrafo o link
+      </p>
+    </div>
+    <div class="linea-horizontal"></div>
+    <h2>estilo para listas</h2>
+    <div>
+      <ul class="puntito">
+        <li>lista sin el puntito</li>
+      </ul>
+    </div>
+    <div class="boton posicion">
+      <ul>
+        <li>list posision</li>
+      </ul>
+    </div>
+    <div class="boton ima">
+      <ul>
+        <li>list imagen</li>
+      </ul>
+    </div>
+  </body>
+</html>

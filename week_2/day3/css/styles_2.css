@@ -1,0 +1,136 @@
+* {
+  background-color: #0b1114;
+  color: hsl(208, 100%, 87%);
+  padding-left: 1vw;
+}
+h1 {
+  display: flex;
+  align-items: center;
+}
+h3 {
+  color: #df931b;
+}
+.linea-horizontal {
+  height: 2px;
+  width: 80vw;
+  background-color: rgb(190, 1, 1);
+}
+/* Aplica estilos a todos los elementos p dentro de un p */
+/* convinador decendiente */
+div p {
+  color: #e1d994;
+  font-size: 1.5rem;
+}
+/* convinador de hijo directo  */
+/* Aplica estilos solo a los elementos p que son hijos directos de un div*/
+div > p {
+  color: #94b56e;
+}
+.conbinadores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boton {
+  color: #0b1114;
+  background-color: hsl(208, 100%, 87%);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 1rem;
+  margin: 0.5rem;
+}
+img + [class] {
+  color: #df931b;
+}
+img:hover ~ .boton {
+  transform: scale(2);
+}
+.container {
+  font-size: 32px;
+}
+.rem {
+  font-size: 1rem;
+}
+.em {
+  font-size: 1em;
+}
+.x {
+  font-size: 1rem;
+}
+.caja {
+  width: 100px;
+  height: 100px;
+  background-color: #df931b;
+  padding: 0%;
+}
+.incaja {
+  width: 50%;
+  height: 50%;
+  background-color: bisque;
+  padding: 0%;
+}
+.imagen {
+  background-image: url(../img/principito.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.repite {
+  height: 600px;
+  width: 600px;
+
+  background-image: url(../img/principito.jpg);
+  /* background-position: center;
+  background-size: cover; */
+  /* background-repeat: no-repeat; */
+  background-repeat: repeat;
+}
+.attach {
+  width: 600px;
+  height: 200px;
+  background-image: url(../img/principito.jpg);
+  background-attachment: fixed;
+}
+.offset-xy {
+  /* el primer valor corresponde al eje x el segundo al eje y  */
+  /* el 3er valor a la difunicion del cuadrado y el 4 pertenece a que tantos pixeles queremos que sobresalgan */
+  box-shadow: 10px 10px;
+}
+.blur {
+  box-shadow: 10px 10px 5px;
+}
+.spread {
+  box-shadow: 10px 10px 5px 10px;
+}
+.color {
+  box-shadow: 10px 10px 5px 10px red;
+}
+.inset {
+  box-shadow: inset 10px 10px 5px 10px red;
+}
+
+/* tipografias */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+.caja-texto {
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+.puntito {
+  list-style-type: none;
+}
+.posicion {
+  width: fit-content;
+  list-style-type: circle;
+  list-style-position: inside;
+  /* list-style-position: outside; */
+  background-color: crimson;
+}
+.ima {
+  width: fit-content;
+
+  list-style-image: url(../img/principito.jpg);
+  list-style-position: inside;
+}

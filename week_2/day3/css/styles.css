@@ -1,0 +1,30 @@
+html {
+  font-size: 10px;
+}
+/* 1 em = 16px */
+
+h1 {
+  color: rgb(216, 0, 0);
+  background-color: rgb(45, 27, 239);
+}
+div p {
+  color: brown;
+}
+.title {
+  background-color: chocolate;
+}
+.container {
+  font-size: 16px;
+}
+.paragraph {
+  font-size: 1.2em; /* 1.2 veces el tamaño del elemento padre, que en este caso es el elemento raíz (16px * 1.2 = 19.2px) */
+  margin-bottom: 1em; /* El margen inferior es igual al tamaño de fuente del elemento padre, que en este caso es el tamaño de fuente del párrafo (19.2px) */
+  background-color: antiquewhite;
+}
+
+/* Definir el tamaño de fuente de la caja en función de rem */
+.box {
+  font-size: 1.5rem; /* 1.5 veces el tamaño del elemento raíz (16px * 1.5 = 24px) */
+  padding: 0.5rem; /* El relleno de la caja es igual al tamaño de fuente del elemento raíz (16px) */
+  background-color: antiquewhite;
+}
