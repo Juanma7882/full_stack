@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  height: 300px;
+  width: 200px;
+  background-color: blue;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column; /* Establece la dirección de los elementos como columna */
+  justify-content: space-between;
+  gap: 1px;
+}
+.imagen {
+  margin: 3%;
+  border-radius: 1rem;
+  flex-grow: 3;
+  background-image: url(/week_2/day3/img/principito.jpg);
+  background-size: cover;
+}
+.contenedor {
+  margin: 3%;
+  border-radius: 1rem;
+  /* background-color: aqua; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.texto-logo {
+  color: aliceblue;
+  flex-grow: 1;
+  border-radius: 1rem;
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+.botones {
+  border-radius: 1rem;
+  flex-grow: 1;
+  /* background-color: yellowgreen; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(/week_2/day3/img/principito.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 10px;
+
+  /* margin-right: 10px; Añade un margen a la derecha para separar el logo del texto */
+}
+.dowload {
+  height: 50%;
+  width: 45%;
+  border-radius: 13px;
+  background-color: rgb(190, 10, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.share {
+  height: 50%;
+  width: 45%;
+  border-radius: 13px;
+  background-color: rgb(190, 10, 109);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

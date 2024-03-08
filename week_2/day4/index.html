@@ -4,8 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>box/caja</title>
+    <link rel="stylesheet" href="/week_2/day4/css/style.css" />
   </head>
   <body>
-    <h1></h1>
+    <h1>css 2</h1>
+    <h2>Box-sizin</h2>
+    <div class="box">hello</div>
+    <div>
+      <p>
+        por convencion para resetear los estilos relacionados al box model en el
+        navegador se usan los siguientes estilos en el selector universal
+      </p>
+      <div class="contenedor">
+        <img
+          src="../day4/img/Captura de pantalla 2024-02-13 194353.png"
+          alt="Descripción-de-la-imagen"
+        />
+      </div>
+      <div class="contenedor">
+        <img src="../day4/img/box-sizing.png" alt="content-box-vs-border-box" />
+      </div>
+    </div>
+    <div>
+      <h2>overflow</h2>
+      <p>
+        la propiedad overflow se utiliza para que no se vea si de alguna forma
+        nuestra pagina rompe cuando esta cambia de tamaño y se exeda el tamaño
+        pre-establecido
+      </p>
+      <h2>sin overflow</h2>
+      <div class="caja-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+        nesciunt dolore aspernatur qui inventore culpa, iste repellendus fugit
+        recusandae sint tempore quisquam et iure fuga officia, voluptate
+        voluptas, illum eos.
+      </div>
+      <h2>con overflow: hiden</h2>
+      <div class="caja-2">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+        nesciunt dolore aspernatur qui inventore culpa, iste repellendus fugit
+        recusandae sint tempore quisquam et iure fuga officia, voluptate
+        voluptas, illum eos.
+      </div>
+    </div>
+    <h3>overflow scrol</h3>
+    <div class="caja-2 scrol">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolore
+      blanditiis eius cumque excepturi delectus sit nisi. Consectetur quidem
+      earum quae velit at neque, alias adipisci voluptatem dolore illo beatae?
+    </div>
+    <h3>overflow auto</h3>
+    <div class="caja-2 auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, dolore
+      blanditiis eius cumque excepturi delectus sit nisi. Consectetur quidem
+      earum quae velit at neque, alias adipisci voluptatem dolore illo beatae?
+    </div>
+    <h2>padding</h2>
+    <div class="box padding">pading</div>
+    <h2>border-radius</h2>
+    <div class="box border_radius">border_radius</div>
+    <h2>border</h2>
+    <div class="box border">border</div>
+    <h2>dashed</h2>
+    <div class="box dashed">dashead</div>
+    <h2>dotted</h2>
+    <div class="box dotted">dotted</div>
+    <h2>double</h2>
+    <div class="box double">double</div>
+    <h2>tipos de etiquetas en linea y en bloque</h2>
+    <div class="contenedor">
+      <img src="../day4/img/display.png" alt="" />
+    </div>
+    <p>la etiqeta p es una etiqueta de bloque</p>
+    <p>
+      si pongo otra etiqueta p esta va quedar abajo por mas espacio que quede
+    </p>
+    <p>mientras que por ejemplo link en una etiqueta inline</p>
+
+    <a href="#">first link</a>
+    <a href="#">second link </a>
+    <div>
+      <a href="#" class="block">esto es un link con display block</a>
+      <a href="#" class="block">esto es un link con display block</a>
+    </div>
+    <div>
+      <p class="inline">esto es un parrafo con display inline</p>
+      <p class="inline">
+        y este es el segundo con la misma propiedad terminan uno al lado del
+        otro
+      </p>
+      <p class="inline-block">
+        y por ultimo tenemos a la etiqueta inline-block
+      </p>
+      <p class="inline-block">
+        que se comporta como una etiqueta inline pero se la puede ajustar como
+        si fuera en block
+      </p>
+      <p class="resaltar">
+        cabe destacar que cada uno tanto en linea como en bloque tiene sus
+        propiedades unicas y que en todo caso hay que investigar pero apriori si
+        las se
+      </p>
+      <h2>pocision</h2>
+      <p>
+        dependiendo de las propiedades de cada elemento podemos acceder a
+        diferentes caracteristicas para acomodar el codigo como queremos
+      </p>
+      <p>static: valor por defecto</p>
+      <p>relative: se posiciona relativamente al flujo normal</p>
+      <p>
+        absolute:se posiciona respecto a su contenedor mas cercano si no hay
+        ninguno que etnga un posicionamiento definido se posiciona respecto al
+        viewport
+      </p>
+      <p>fixed: se posiciona resspecto al viewport y queda siempre fijo</p>
+      sticky: Hibrido entre relativo y fixed(progundizaremos en la siguientes
+      clases)
+    </div>
+    <h3>static</h3>
+    <div class="container">
+      <div class="box">static/ por defecto</div>
+      <div class="box">static/ por defecto</div>
+      <div class="box">static/ por defecto</div>
+    </div>
+    <h3>relative</h3>
+    <div class="container">
+      <div class="box relative">relative</div>
+      <div class="box">relative</div>
+      <div class="box">relative</div>
+    </div>
+    <p>
+      el relative se pocisiona en realacion a su contenedor padre en caso que no
+      lo tenga con la pagina y bueno se lo puede acomodar left right botton y
+      top respectivamente
+    </p>
+    <h3>absolute</h3>
+    <p>
+      absolute se posiciona en pocicion relativa al elemento mas cercano con
+      posicion si no lo tiene se va en realacion del viewport y como se puede
+      ver los elementos no resepetan la pocision que este mismo estaba ocupando
+    </p>
+    <div class="absolute-container">
+      <div class="box absolute"></div>
+      <div class="box cajitas"></div>
+      <div class="box cajitas"></div>
+      <div class="box cajitas"></div>
+    </div>
+    <h3>relative</h3>
+    <p>
+      en relative como se puede apreciar si se sigue respetando el espacio que
+      este mismo ya dejo
+    </p>
+    <div class="absolute-container">
+      <div class="box relative">relative</div>
+      <div class="box">relative</div>
+      <div class="box">relative</div>
+    </div>
+    <h3>fixed</h3>
+    <div class="container">
+      <div class="box fixed">W</div>
+    </div>
+    <p>se hace como el logito de wasap o de contactenme</p>
+    <div class="vacio"></div>
   </body>
 </html>

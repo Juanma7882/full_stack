@@ -1,0 +1,76 @@
+:root {
+  /* --- colores --- */
+  --purple: rgb(148, 0, 161);
+  --rose: rgb(235, 33, 78);
+  --black: rgb(26, 22, 35);
+  --orange: rgb(235, 100, 39);
+  --yellow: rgb(240, 221, 166);
+  --green: #9ed99e;
+  /* fuentes - tamaños  */
+  --font-small: 12px;
+  --font--medium: 18px;
+  --font-large: 24px;
+  --font-estra-large: 32px;
+  /* box-shadow */
+  --mi-shadow: 10px 10px 15px 0px rgba(0, 0, 0.5);
+  --inset-shadow: inset 10px 10px 20px 0px rgba(10, 8, 8, 0.75);
+}
+* {
+  background-color: var(--black);
+  color: var(--yellow);
+}
+.titulo {
+  text-decoration: underline;
+}
+.container {
+  width: 80vw;
+  height: 230px;
+  background-color: var(--rose);
+  border-radius: 1rem;
+  margin: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caja {
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--purple);
+}
+.small {
+  font-size: var(--font-small);
+}
+.medium {
+  font-size: var(--font--medium);
+}
+.large {
+  font-size: var(--font-large);
+}
+.extra-large {
+  font-size: var(--font-estra-large);
+  font-weight: 800;
+}
+.s {
+  background-color: var(--green);
+}
+.m {
+  background-color: var(--orange);
+}
+.l {
+  background-color: var(--black);
+}
+.el {
+  background-color: var(--rose);
+}
+
+.box-small {
+  box-shadow: var(--inset-shadow);
+}
+.box-medium {
+  box-shadow: var(--mi-shadow);
+}

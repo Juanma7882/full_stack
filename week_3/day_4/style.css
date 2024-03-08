@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #3da9fc;
+  --dark-bg: #202020;
+  --card-bg: #16161a;
+  --text-white: #fff;
+  --text-gray: #94a1b2;
+}
+body {
+  background-color: var(--dark-bg);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.card {
+  background: var(--card-bg);
+  padding: 0.5rem;
+  padding-bottom: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+.card__img {
+  max-width: 300px;
+  border-radius: 0.8rem;
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 30px;
+}
+.card__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user__img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url(/week_2/day3/img/principito.jpg) no-repeat center/cover;
+}
+.user__title {
+  color: var(--text-white);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.user__desc {
+  color: var(--text-gray);
+}
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.card__btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.btn--secondary {
+  background: none;
+  color: var(--text-gray);
+  border: 3px solid var(--text-gray);
+}
+.btn--primary {
+  background-color: var(--primary);
+  color: var(--text-white);
+}

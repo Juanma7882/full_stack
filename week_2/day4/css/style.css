@@ -1,5 +1,122 @@
 * {
+  background-color: black;
   padding: 0;
   border: 0;
   box-sizing: border-box;
+  color: white;
+}
+.vacio {
+  margin: 800px;
+}
+.box {
+  color: black;
+  width: fit-content;
+  background-color: rgb(6, 114, 9);
+  padding: 1%;
+  /* border: 10px; */
+  border-radius: 10px;
+}
+.contenedor {
+  width: 300px; /* Ancho deseado para el contenedor */
+  height: 200px; /* Alto deseado para el contenedor */
+  overflow: hidden; /* Para ocultar cualquier parte de la imagen que exceda los límites del contenedor */
+}
+
+.contenedor img {
+  max-width: 100%; /* La imagen no superará el ancho del contenedor */
+  max-height: 100%; /* La imagen no superará el alto del contenedor */
+  display: block; /* Para que la imagen se comporte correctamente con los valores de ancho y alto */
+  margin: auto; /* Para centrar la imagen horizontalmente dentro del contenedor */
+}
+.caja-1 {
+  height: 130px;
+  width: 200px;
+  margin: 20px;
+  background-color: brown;
+}
+.caja-2 {
+  margin: 20px;
+  height: 130px;
+  width: 200px;
+  background-color: brown;
+  overflow: hidden;
+  display: flex;
+}
+.scrol {
+  overflow: scroll;
+  width: 220px;
+}
+.auto {
+  overflow: auto;
+}
+
+.padding {
+  padding: 40px 30px 20px 10px;
+}
+.border_radius {
+  border-radius: 80px 40px 20px 10px;
+  /* border-radius: 10px; */
+}
+.border {
+  border: solid;
+  border-color: aliceblue;
+  border-width: 10px;
+}
+.dashed {
+  border-width: 10px;
+  border: 5px dashed aliceblue;
+}
+
+.dotted {
+  border: 5px dotted aliceblue;
+}
+.double {
+  border: 5px double aliceblue;
+}
+.block {
+  display: block;
+  background-color: rgb(87, 3, 3);
+}
+.inline {
+  display: inline;
+  background-color: rgb(42, 11, 88);
+}
+.inline-block {
+  display: inline-block;
+}
+
+.resaltar {
+  color: aqua;
+}
+.relative {
+  background-color: red;
+  position: relative;
+  left: 20px;
+  top: 10px;
+}
+.absolute-container {
+  background: pink;
+  width: fit-content;
+  padding: 16px;
+  margin: 20px 0;
+  border-radius: 0px;
+  position: relative;
+}
+.absolute {
+  width: 100px;
+  height: 100px;
+  background-color: brown;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+.cajitas {
+  width: 100px;
+  height: 100px;
+}
+.fixed {
+  border-radius: 100%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
