@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>pirmera landing page</title>
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/media-queries.css" />
+    <title>primera landing page</title>
   </head>
   <body>
     <header>
@@ -14,7 +15,13 @@
       <!-- tambien puede ser un div -->
       <!-- <div></div> -->
       <!-- ====   navbar   ====== -->
+
       <nav class="navbar">
+        <!-- agregamos el input label para el menu  -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./img/menu.png" alt="" class="shopping-cart" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li><a href="" class="active">Home</a></li>
           <li><a href="#">Descubre</a></li>
@@ -22,13 +29,39 @@
           <li><a href="#">Youtube</a></li>
           <li><a href="#">Contactanos</a></li>
         </ul>
-        <img
-          src="https://via.placeholder.com/50"
-          alt="#"
-          class="shopping-cart"
-        />
+
+        <!-- ======= carrito / funcinalidad del carrito ======== -->
+        <label for="cart-toggle">
+          <img src="./img/car.png" alt="#" class="shopping-cart" />
+          <!-- "https://via.placeholder.com/50" -->
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h2>tus nfts</h2>
+          <!-- producto  -->
+          <div class="cart-item">
+            <img src="./img/car.png" alt="" class="shopping-cart" />
+            <div class="item-info">
+              <h3 class="item-title"></h3>
+              <p class="item-bid">current bit</p>
+
+              <span class="item-price"> 4.8 ETH</span>
+            </div>
+            <div class="item-hamdler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- divisor  -->
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>total:</p>
+            <span>18.3 ETH</span>
+          </div>
+          <button class="btn-add">comprar</button>
+        </div>
       </nav>
-      <!-- ======= carrito ======== -->
     </header>
     <main>
       <section class="hero">

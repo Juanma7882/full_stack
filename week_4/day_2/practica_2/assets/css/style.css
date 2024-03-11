@@ -2,9 +2,9 @@
 
 :root {
   /* colours  */
-  --background: rgb(26, 25, 29); /* background-color */
+  --background: rgb(4, 4, 12); /* background-color */
   --primary: rgb(67, 76, 203);
-  --secondary: #272d37;
+  --secondary: #1e232c;
   --btn-lg: #050d26;
   --bg-azul-10: #e9eeff;
   --bg-white: #fff;
@@ -35,7 +35,9 @@
 }
 /* ============  header  ============ */
 header {
+  top: 0;
   height: 65px;
+  width: 100%;
   background-color: var(--secondary);
   display: flex;
   position: fixed;
@@ -50,6 +52,7 @@ header {
 .navbar > ul > li {
   color: var(--text-gray);
   font-weight: 400;
+  cursor: pointer;
 }
 ul > li.home {
   font-weight: 800;
@@ -60,9 +63,10 @@ ul > li.home {
 }
 .carrito {
   height: 50px;
+  cursor: pointer;
 }
 .navbar-text {
-  gap: 10px;
+  gap: 15px;
 }
 
 /* ============  main  ============ */
@@ -75,7 +79,7 @@ main {
 section {
   display: flex;
   align-items: start;
-  margin-top: 60px;
+  margin-top: 110px;
   max-width: 800px;
 }
 .discover {
@@ -168,10 +172,9 @@ section {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  gap: 20px;
 }
-.info-container {
-  height: 200px;
-}
+
 .ete {
   width: 300px;
 }
@@ -182,7 +185,7 @@ section {
 }
 .info-container-title {
   font-size: xx-large;
-  width: 1200px;
+  width: 100%;
 }
 .info-text-top {
   align-items: center;
@@ -204,11 +207,13 @@ section {
 }
 .imagenes {
   gap: 20px;
+  margin: 10px;
 }
 
 /* ======= btc ============= */
 .btc {
   max-width: 1200px;
+  margin-bottom: 100px;
 }
 
 .btc-top {
@@ -288,4 +293,131 @@ footer {
 }
 .navbar-footer > li {
   color: var(--text-gray);
+}
+.menu-amburguesa {
+  display: none;
+}
+#menu-toggle,
+#cart-toggle {
+  display: none;
+}
+.carrito-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background-color: rgb(32, 12, 89);
+  padding: 20px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  display: none;
+  gap: 12px;
+}
+#cart-toggle:checked + .carrito-card {
+  display: flex;
+}
+.carrito-card::-webkit-scrollbar {
+  width: 0; /* Ancho del scrollbar a 0 */
+}
+.compras-del-carrito {
+  background-color: var(--btn-lg);
+  border-radius: 15px;
+}
+.carrito-texto-del-carrito {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  font-weight: 300;
+}
+.carrito-cantidad-productos {
+  gap: 50px;
+}
+.producto {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1.5px solid #b7ebff;
+}
+.cantidad {
+  border: 0px;
+}
+.linea-divisoria {
+  height: 2px;
+  width: 97%;
+  background-color: var(--electric);
+}
+.boton-comprar {
+  background-color: var(--btn-lg);
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ============  media queries  ===================================================== */
+/* (max-width: 576px) */
+@media (max-width: 1000px) {
+  .navbar-text {
+    flex-direction: column;
+    position: fixed;
+    width: 95%;
+    /* height: ; */
+    right: 0px;
+    top: 65px;
+    background-color: rgb(32, 12, 89);
+    align-items: start;
+    margin: 0 2.5%;
+    padding: 20px;
+    font-weight: 800;
+    border: 2px solid rgb(104, 151, 222);
+    border-radius: 0px 0px 1rem 1rem;
+    border-top: 0px;
+    display: none;
+  }
+  .menu-amburguesa {
+    display: flex;
+  }
+  #menu-toggle:checked + ul {
+    display: flex;
+  }
+  /* =========== main ============== */
+  .discover {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .discover-text {
+    max-width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+  .dicover-card {
+    display: none;
+  }
+  .aprender-box-cards {
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .info-container {
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .imagenes {
+    flex-wrap: wrap;
+  }
+  .btc-buttons {
+    max-width: 350px;
+    flex-wrap: wrap;
+  }
+  .aprender {
+    text-align: center;
+  }
 }

@@ -4,12 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>optimizacion</title>
-    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="http:/" /> -->
   </head>
   <body>
     <header>
-      <img src="./img/m.jpg" alt="logo" class="logo" />
+      <img src="./assets/img/m.jpg" alt="logo" class="logo" />
+
       <nav class="navbar flex">
+        <label for="menu-toggle">
+          <img
+            src="./assets/img/menu.png"
+            alt="#"
+            class="menu-amburguesa carrito"
+          />
+          <!-- "https://via.placeholder.com/50" -->
+        </label>
+        <input type="checkbox" id="menu-toggle" />
         <ul class="flex navbar-text">
           <li class="home">Home</li>
 
@@ -21,7 +33,40 @@
 
           <li>Contactanos</li>
         </ul>
-        <img src="./img/carrito.jpg" alt="carrito" class="carrito" />
+        <label for="cart-toggle">
+          <img
+            src="./assets/img/car.png"
+            alt="#"
+            class="shopping-cart carrito"
+          />
+          <!-- "https://via.placeholder.com/50" -->
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="carrito-card">
+          <h1>Tus BITCOINS</h1>
+          <div class="compras-del-carrito">
+            <div class="carrito-texto-del-carrito">
+              <img src="./assets/img/menu.png" alt="" class="logo" />
+              <div class="texto-carrito">
+                <p>current bit</p>
+                <p>4.8 ETH</p>
+              </div>
+              <div class="carrito-cantidad-productos">
+                <span class="producto">+</span>
+                <span class="producto cantidad">1</span>
+                <span class="producto">-</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="divisor"></div> -->
+          <div class="linea-divisoria"></div>
+          <div class="cart-total">
+            <h2>total</h2>
+            <p>4.8</p>
+          </div>
+          <div class="boton-comprar">comprar</div>
+        </div>
+        <!-- <img src="./assets/img/car.png" alt="carrito" class="carrito" /> -->
       </nav>
     </header>
     <main class="flex">
@@ -34,13 +79,13 @@
             reconocido como el alias de la persona o grupo de personas que
             crearon Bitcoin, una figura o figuras invisibles cuya creación
             tecnológica ha influido en el mundo. compre
-            <span class="BITCOINS">BITCOINS</span> y sea parte del futuro
+            <span class="BITCOINS">BITCOINS</span> y s ea parte del futuro
           </p>
           <a class="send">send</a>
         </div>
         <!-- targeta discover -->
         <div class="dicover-card">
-          <img src="./img/bit.jpg" alt="Bitcoin" class="Bitcoin" />
+          <img src="./assets/img/bit.jpg" alt="Bitcoin" class="Bitcoin" />
           <div class="dicover-text-card flex">
             <div class="dicover-card-top flex">
               <h3 class="over">"the greatest od all time"</h3>
@@ -66,7 +111,7 @@
         <h2>crea aprende y comparte los NFTs</h2>
         <div class="aprender-box-cards flex">
           <div class="aprender-cards flex">
-            <img src="./img/shibu.jpg" alt="" class="dogue" />
+            <img src="./assets/img/shibu.jpg" alt="" class="dogue" />
             <h3 class="aprender-cards-title">configura tu wallet</h3>
             <p class="parrafo_small">
               una vez que haya configurado la billetera de su eleccion conectela
@@ -74,7 +119,7 @@
             </p>
           </div>
           <div class="aprender-cards flex">
-            <img src="./img/shibu.jpg" alt="" class="dogue" />
+            <img src="./assets/img/shibu.jpg" alt="" class="dogue" />
             <h3 class="aprender-cards-title">configura tu wallet</h3>
             <p class="parrafo_small">
               una vez que haya configurado la billetera de su eleccion conectela
@@ -82,7 +127,7 @@
             </p>
           </div>
           <div class="aprender-cards flex">
-            <img src="./img/shibu.jpg" alt="" class="dogue" />
+            <img src="./assets/img/shibu.jpg" alt="" class="dogue" />
             <h3 class="aprender-cards-title">configura tu wallet</h3>
             <p class="parrafo_small">
               una vez que haya configurado la billetera de su eleccion conectela
@@ -99,18 +144,18 @@
           <div class="info-text-top">
             <div class="text-container-info">
               <p>
-                tendreas la oportunidad de nfts sobre distintos topicos y de
-                este modo acceder a berneficios exclusivos por tomar parte de
-                dicho clup: ej "team stars wars"
+                tendras la oportunidad de nfts sobre distintos topicos y de este
+                modo acceder a berneficios exclusivos por tomar parte de dicho
+                clup: ej "team stars wars"
               </p>
               <a href="#" class="empezamos-ahora">empezamos ahora</a>
             </div>
           </div>
         </div>
         <div class="imagenes flex">
-          <img src="./img/ete.jpg" alt="ete" class="ete" />
-          <img src="./img/ete.jpg" alt="ete" class="ete" />
-          <img src="./img/ete.jpg" alt="ete" class="ete" />
+          <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+          <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+          <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
         </div>
       </section>
       <section class="btc flex">
@@ -126,7 +171,7 @@
           <div class="container-cards">
             <div class="btc-cards">
               <div class="btc-card">
-                <img src="./img/ete.jpg" alt="ete" class="ete" />
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
                 <div class="btc-card-top">
                   <h3>michi</h3>
                   <p class="gris">programacion</p>
@@ -149,7 +194,7 @@
             </div>
             <div class="btc-cards">
               <div class="btc-card">
-                <img src="./img/ete.jpg" alt="ete" class="ete" />
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
                 <div class="btc-card-top">
                   <h3>michi</h3>
                   <p class="gris">programacion</p>
@@ -172,7 +217,7 @@
             </div>
             <div class="btc-cards">
               <div class="btc-card">
-                <img src="./img/ete.jpg" alt="ete" class="ete" />
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
                 <div class="btc-card-top">
                   <h3>michi</h3>
                   <p class="gris">programacion</p>
@@ -195,7 +240,7 @@
             </div>
             <div class="btc-cards">
               <div class="btc-card">
-                <img src="./img/ete.jpg" alt="ete" class="ete" />
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
                 <div class="btc-card-top">
                   <h3>michi</h3>
                   <p class="gris">programacion</p>
@@ -218,7 +263,7 @@
             </div>
             <div class="btc-cards">
               <div class="btc-card">
-                <img src="./img/ete.jpg" alt="ete" class="ete" />
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
                 <div class="btc-card-top">
                   <h3>michi</h3>
                   <p class="gris">programacion</p>
@@ -241,7 +286,7 @@
             </div>
             <div class="btc-cards">
               <div class="btc-card">
-                <img src="./img/ete.jpg" alt="ete" class="ete" />
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
                 <div class="btc-card-top">
                   <h3>michi</h3>
                   <p class="gris">programacion</p>
@@ -270,8 +315,8 @@
     <footer class="flex">
       <nav>
         <ul class="navbar-footer flex">
-          <li>teminos de uso</li>
-          <li>trabaja con nosotros</li>
+          <li>teminos de u so</li>
+          <li>trabaja con no so tros</li>
           <li>soporte</li>
         </ul>
       </nav>
