@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>login 2</title>
+  </head>
+  <body>
+    <div class="formulario">
+      <form action="post" class="formulario-form">
+        <h1>Iniciar sesion</h1>
+        <div class="datos">
+          <input type="text" required />
+          <label>Nombre de usuario</label>
+        </div>
+        <div class="datos">
+          <input
+            type="password"
+            required
+            oninvalid="this.setCustomValidity('Por favor, completa este campo.')"
+          />
+          <label>Contraseña</label>
+        </div>
+        <div class="recuperar-contraseña">
+          <a href="#">¿Olvido su contraseña?</a>
+        </div>
+        <div class="botton">
+          <button type="submit">Iniciar</button>
+          <a href="#" class="button-registrarse">Registrarse</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

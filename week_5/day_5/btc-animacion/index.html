@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link rel="stylesheet" href="./estilos/media-queries.css" />
+    <link rel="stylesheet" href="./estilos/animaciones.css" />
+    <title>animaciones</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- metodo 1 favicon bien completo https://favicon.io/favicon-converter/  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <header>
+      <!-- <img src="https://via.placeholder.com/50" alt="#" class="logo" /> -->
+      <img src="./img/m.jpg" alt="#" class="logo" />
+
+      <!-- tambien puede ser un div -->
+      <!-- <div></div> -->
+      <!-- ====   navbar   ====== -->
+
+      <nav class="navbar">
+        <!-- agregamos el input label para el menu  -->
+        <label for="menu-toggle" class="menu-label">
+          <img src="./img/menu.png" alt="" class="shopping-cart" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="navbar-list">
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#info">Descubre</a></li>
+          <li><a href="#discover">Btc</a></li>
+          <li><a href="#productos">Youtube</a></li>
+          <li><a href="#">Contactanos</a></li>
+        </ul>
+
+        <!-- ======= carrito / funcinalidad del carrito ======== -->
+        <label for="cart-toggle">
+          <!-- <img src="./img/car.png" alt="#" class="shopping-cart" /> -->
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
+          <!-- "https://via.placeholder.com/50" -->
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="cart">
+          <h2>tus nfts</h2>
+          <!-- producto  -->
+          <div class="cart-item">
+            <img src="./img/car.png" alt="" class="shopping-cart" />
+            <div class="item-info">
+              <h3 class="item-title"></h3>
+              <p class="item-bid">current bit</p>
+
+              <span class="item-price"> 4.8 ETH</span>
+            </div>
+            <div class="item-hamdler">
+              <span class="quantity-handler down">-</span>
+              <span class="item-quantity">1</span>
+              <span class="quantity-handler up">+</span>
+            </div>
+          </div>
+          <!-- divisor  -->
+          <span class="divider"></span>
+          <div class="cart-total">
+            <p>total:</p>
+            <span>18.3 ETH</span>
+          </div>
+          <button class="btn-add">comprar</button>
+        </div>
+        <div class="overlay"></div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-info">
+          <h1>Descubre la nueva era <span>cripto</span></h1>
+          <p>
+            El primer Bitcoin fue minado el 3 de enero de 2009 por alguien
+            conocido como "Satoshi Nakamoto". Hoy en día, Satoshi Nakamoto es
+            reconocido como el alias de la persona o grupo de personas que
+            crearon Bitcoin, una figura o figuras invisibles cuya creación
+            tecnológica ha influido en el mundo. compre
+            <span>Bitcoins </span> y sea parte del futuro
+          </p>
+          <a href="#">buy</a>
+        </div>
+        <div class="hero-card">
+          <img src="./img/bit.jpg" alt="#" class="imagen" />
+          <div class="heri-card-info">
+            <div class="hero-card-top">
+              <h3>"the greatest od all time"</h3>
+              <span>10</span>
+            </div>
+            <!-- info del creador  -->
+            <div class="hero-card-bottom">
+              <!-- creador  -->
+              <div class="hero-card-creator">
+                <img src="https://via.placeholder.com/50" alt="dogue" />
+                <!-- info del creador  -->
+                <div class="creator-info">
+                  <span>creador</span>
+                  <p>carl rexach</p>
+                </div>
+              </div>
+              <!-- price  -->
+              <div class="hero-card-price">
+                <p>value</p>
+                <span>16 ETH</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- crea y aprende  -->
+      <section id="info">
+        <h2>crea aprende y comparte los NFTs</h2>
+        <div class="info-cards-conteiner">
+          <!-- card 1  -->
+          <div class="info-card">
+            <img src="./img/shibu.jpg" alt="" class="shibu" />
+            <h3>configura tu wallet</h3>
+            <p>
+              una vez que haya configurado la billetera de su eleccion conectela
+              a opensea
+            </p>
+          </div>
+          <!-- card 2  -->
+          <div class="info-card">
+            <img src="./img/shibu.jpg" alt="" class="shibu" />
+            <h3>configura tu wallet</h3>
+            <p>
+              una vez que haya configurado la billetera de su eleccion conectela
+              a opensea
+            </p>
+          </div>
+          <!-- card 3  -->
+          <div class="info-card">
+            <img src="./img/shibu.jpg" alt="" class="shibu" />
+            <h3>configura tu wallet</h3>
+            <p>
+              una vez que haya configurado la billetera de su eleccion conectela
+              a opensea
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- discover  -->
+      <section id="discover">
+        <div class="discover-info">
+          <h2>descubre una nueva era de collecciones</h2>
+          <div class="discover-text">
+            <p>
+              tendreas la oportunidad de nfts sobre distintos topicos y de este
+              modo acceder a berneficios exclusivos por tomar parte de dicho
+              clup: ej "team stars wars"
+            </p>
+            <a href="#">empezamos ahora</a>
+          </div>
+        </div>
+        <!-- cards  -->
+        <div class="discover-cards">
+          <img src="./img/ete.jpg" alt="" class="ete" />
+          <img src="./img/ete.jpg" alt="" class="ete" />
+          <img src="./img/ete.jpg" alt="" class="ete" />
+        </div>
+      </section>
+      <!-- productos 1 -->
+      <section id="productos">
+        <h2>HOT NFTs</h2>
+        <!-- categorias  -->
+        <div class="categories">
+          <button class="category active">todos</button>
+          <button class="category">Futbol</button>
+          <button class="category">musica</button>
+          <button class="category">Autos</button>
+          <button class="category">Peliculas</button>
+        </div>
+        <!-- productos -->
+        <div class="products-container">
+          <!-- prduct 1  -->
+          <div class="product">
+            <img src="./img/ete.jpg" alt="" class="m" />
+            <!-- contenedor para la info  -->
+            <div class="product-info">
+              <div class="product-top">
+                <h3>michi</h3>
+                <p>programacion</p>
+              </div>
+              <!-- mid  -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img src="./img/m.jpg" alt="" class="img-peque" />
+                  <p>michi oeque</p>
+                </div>
+                <span>6.89eth</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bot">
+                <div class="offer-time">
+                  <img src="./img/m.jpg" alt="" class="logui-michi" />
+                  <p>05:12:07</p>
+                </div>
+                <button class="btn-add">add</button>
+              </div>
+            </div>
+          </div>
+          <!-- prduct 2  -->
+          <div class="product">
+            <img src="./img/ete.jpg" alt="" class="m" />
+            <!-- contenedor para la info  -->
+            <div class="product-info">
+              <div class="product-top">
+                <h3>michi</h3>
+                <p>programacion</p>
+              </div>
+              <!-- mid  -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img src="./img/m.jpg" alt="" class="img-peque" />
+                  <p>michi oeque</p>
+                </div>
+                <span>6.89eth</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bot">
+                <div class="offer-time">
+                  <img src="./img/m.jpg" alt="" class="logui-michi" />
+                  <p>05:12:07</p>
+                </div>
+                <button class="btn-add">add</button>
+              </div>
+            </div>
+          </div>
+          <!-- prduct 3  -->
+          <div class="product">
+            <img src="./img/ete.jpg" alt="" class="m" />
+            <!-- contenedor para la info  -->
+            <div class="product-info">
+              <div class="product-top">
+                <h3>michi</h3>
+                <p>programacion</p>
+              </div>
+              <!-- mid  -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img src="./img/m.jpg" alt="" class="img-peque" />
+                  <p>michi oeque</p>
+                </div>
+                <span>6.89eth</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bot">
+                <div class="offer-time">
+                  <img src="./img/m.jpg" alt="" class="logui-michi" />
+                  <p>05:12:07</p>
+                </div>
+                <button class="btn-add">add</button>
+              </div>
+            </div>
+          </div>
+          <!-- prduct 4  -->
+          <div class="product">
+            <img src="./img/ete.jpg" alt="" class="m" />
+            <!-- contenedor para la info  -->
+            <div class="product-info">
+              <div class="product-top">
+                <h3>michi</h3>
+                <p>programacion</p>
+              </div>
+              <!-- mid  -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img src="./img/m.jpg" alt="" class="img-peque" />
+                  <p>michi oeque</p>
+                </div>
+                <span>6.89eth</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bot">
+                <div class="offer-time">
+                  <img src="./img/m.jpg" alt="" class="logui-michi" />
+                  <p>05:12:07</p>
+                </div>
+                <button class="btn-add">add</button>
+              </div>
+            </div>
+          </div>
+          <!-- prduct 5  -->
+          <div class="product">
+            <img src="./img/ete.jpg" alt="" class="m" />
+            <!-- contenedor para la info  -->
+            <div class="product-info">
+              <div class="product-top">
+                <h3>michi</h3>
+                <p>programacion</p>
+              </div>
+              <!-- mid  -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img src="./img/m.jpg" alt="" class="img-peque" />
+                  <p>michi oeque</p>
+                </div>
+                <span>6.89eth</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bot">
+                <div class="offer-time">
+                  <img src="./img/m.jpg" alt="" class="logui-michi" />
+                  <p>05:12:07</p>
+                </div>
+                <button class="btn-add">add</button>
+              </div>
+            </div>
+          </div>
+          <!-- prduct 6  -->
+          <div class="product">
+            <img src="./img/ete.jpg" alt="" class="m" />
+            <!-- contenedor para la info  -->
+            <div class="product-info">
+              <div class="product-top">
+                <h3>michi</h3>
+                <p>programacion</p>
+              </div>
+              <!-- mid  -->
+              <div class="product-mid">
+                <div class="product-user">
+                  <img src="./img/m.jpg" alt="" class="img-peque" />
+                  <p>michi oeque</p>
+                </div>
+                <span>6.89eth</span>
+              </div>
+              <!-- bot -->
+              <div class="product-bot">
+                <div class="offer-time">
+                  <img src="./img/m.jpg" alt="" class="logui-michi" />
+                  <p>05:12:07</p>
+                </div>
+                <button class="btn-add">add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn-load">ver mas</button>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <ul class="footer-links">
+          <li><a href="#">terminos de uso</a></li>
+          <li><a href="#">trabaja con nosotros</a></li>
+          <li><a href="#">soporte</a></li>
+        </ul>
+      </nav>
+      <p>hecho por mi</p>
+    </footer>
+  </body>
+</html>

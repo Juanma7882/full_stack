@@ -59,7 +59,7 @@ header {
     display: none;
   }
   .navbar i {
-    display: block;
+    display: flex;
   }
   #toggle-menu:checked ~ .navbar-list {
     display: flex;

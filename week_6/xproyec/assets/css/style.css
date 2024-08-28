@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins";
+  /* border: red 1px solid; */
+  /* color: white; */
+}
+.body {
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+}
+.header {
+  height: 90px;
+  min-width: 100%;
+  background-color: antiquewhite;
+  /* background-color: rgb(18, 11, 74); */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  z-index: 1;
+}
+.header__img {
+  width: 70px;
+  height: 70px;
+}
+.header__img--coffee {
+  width: 100%;
+  height: 100%;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header__nav__lista {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-weight: 500;
+}
+.header__lista__elementos {
+  cursor: pointer;
+}
+.header__hamburguesa--input,
+.header__label {
+  display: none;
+}
+/* ? ====== main ======================================= */
+.main {
+  /* background-color: rgb(10, 10, 10); */
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* ? =============== section_1 */
+.main__inicio {
+  margin-top: 150px;
+  max-width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.text__description {
+  /* font-size: smaller; */
+  margin: 20px 0 10px 0;
+}
+.icon {
+  width: 40px;
+}
+.img__picture {
+  width: 260px;
+  border-radius: 10px;
+}
+/* ? =============== section_2 */
+.main__cards {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.card__container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  display: flex;
+  max-width: 270px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card__icon {
+  font-size: 40px;
+}
+/* ?================= media queries ========================================= */
+@media (max-width: 800px) {
+  .header__nav__lista {
+    transform: translateX(200%);
+    width: 100%;
+    min-height: calc(100vh - 90px);
+    top: 90px;
+    left: 0;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aqua;
+    transition: all 0.5s;
+  }
+  .header__label {
+    display: flex;
+    font-size: xx-large;
+  }
+  .header__hamburguesa--input:checked ~ .header__nav__lista {
+    transform: translateX(0%);
+  }
+}
+/* ?============= main_info =================== */
+
+.main__info {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+/* ? ======= info ================== */
+.info__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info__text__list {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-weight: 400;
+}
+.info__text--list {
+  list-style-type: disc;
+}
+.info__img {
+  width: 500px;
+  height: 500px;
+}
+.info__img--conputadora {
+  max-width: 100%;
+  overflow: hidden;
+}

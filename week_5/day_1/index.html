@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/basic-style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>seudo clases y seudo elemento</title>
+    <!-- con lorem10 escribis 10 palabras solamente -->
+  </head>
+  <body>
+    <header>
+      <h1>seudo clases y seudo elementos</h1>
+      <span>clase 12</span>
+    </header>
+    <main>
+      <section class="pseudo-clases" id="pseudo-clases">
+        <h2>pseudo clases:</h2>
+        <p>
+          Marca elementos con un estado especifico comienzan con dos (:) algunos
+          ejemplos son: | :active | :visited | :link | :focus |
+        </p>
+        <div class="line"></div>
+        <h2>hover</h2>
+        <p>
+          hover: su traduccion literal es flotar al pasar el mause por encima
+        </p>
+        <div class="container">
+          <div class="box hover flex">hover normal</div>
+          <div class="box hover-transicion flex">hover con trancision</div>
+          <div class="box hover-others flex">hi</div>
+        </div>
+        <div class="line"></div>
+        <h2>active</h2>
+        <p>
+          active: esta etiqueta esta activa solo cuando se presiona o se realiza
+          alguna interaccion con el elemento
+        </p>
+        <p>
+          en este caso hice que canvie de color y desaparesca la linea de abajo
+        </p>
+        <div class="container">
+          <a href="#" class="active">no lleva a ningun lado</a>
+        </div>
+        <div class="line"></div>
+        <h2>visited</h2>
+        <p>visited:esta etiqueta se activa cuando el link ya a sido visitado</p>
+        <div class="container">
+          <a
+            href="https://www.youtube.com/?gl=AR&hl=es-419"
+            class="visited"
+            target="_blank"
+            >youtube</a
+          >
+        </div>
+        <div class="line"></div>
+        <h2>link</h2>
+        <p>link :esta etiqueta esta activa mientras el link no fue visitado</p>
+        <div class="container">
+          <a
+            href="https://www.dsda.com/?gl=AR&hl=es-419"
+            class="link"
+            target="_blank"
+            >youtube</a
+          >
+        </div>
+        <div class="line"></div>
+        <h2>focus</h2>
+        <p>focus : funcina en los input</p>
+        <div class="container">
+          <input type="text" placeholder="ingresa" class="focus-input" />
+        </div>
+        <div class="line"></div>
+        <h2>first-child</h2>
+        <p>first-child : selecciona al primer hijo</p>
+        <!-- .caja*4{item$}[target=#] -->
+        <div class="container container_con_hijos">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+        </div>
+        <div class="line"></div>
+        <h2>last-child</h2>
+        <p>last-child : selecciona al ultimo hijo</p>
+        <!-- .caja*4{item$}[target=#] -->
+        <div class="container container_con_final">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+        </div>
+        <div class="line"></div>
+
+        <h2>first-type</h2>
+        <p>
+          first-type : selecciona al primero de su tipo sea el elemento que sea
+          no importa si es un p un div etc
+        </p>
+        <!-- .caja*4{item$}[target=#] -->
+        <div class="container first-type">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+        </div>
+        <p>
+          en el siguiente ejemplo se realiza lo mismo se selecciona al primer
+          hijo solo que esta vez pedi que buscara al primer hijo p
+        </p>
+        <div class="container first-type">
+          <div class="box 1">1</div>
+          <p>primer p</p>
+          <div class="box 2">2</div>
+          <p>segundo p</p>
+          <div class="box 3">3</div>
+        </div>
+        <div class="line"></div>
+        <h2>nth-child-odd</h2>
+        <p>nth-child-odd : selecciona a todos los elementos impares</p>
+        <div class="container nth-child-odd">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+          <div class="box 4">4</div>
+          <div class="box 5">5</div>
+        </div>
+        <div class="line"></div>
+        <h2>nth-child-even</h2>
+        <p>nth-child-even : selecciona a todos los elementos pares</p>
+        <div class="container nth-child-even">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+          <div class="box 4">4</div>
+          <div class="box 5">5</div>
+        </div>
+        <div class="line"></div>
+        <h2>nth-child-number</h2>
+        <p>nth-child-number : selecciona al numero deseado</p>
+        <div class="container nth-child-number">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+          <div class="box 4">4</div>
+          <div class="box 5">5</div>
+        </div>
+        <div class="line"></div>
+        <h2>nth-child-number-n</h2>
+        <p>
+          nth-child-number-n : selecciona al numero de cada cuanto se repite
+        </p>
+        <div class="container nth-child-number-n">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+          <div class="box 4">4</div>
+          <div class="box 5">5</div>
+          <div class="box 5">6</div>
+          <div class="box 5">7</div>
+          <div class="box 5">8</div>
+        </div>
+        <div class="line"></div>
+        <h2>nth-child-number-n-number</h2>
+        <p>
+          nth-child-number-n-number : seleccionas cuando enpieza y cada cuanto
+          se repite
+        </p>
+        <div class="container nth-child-number-n-number">
+          <div class="box 1">1</div>
+          <div class="box 2">2</div>
+          <div class="box 3">3</div>
+          <div class="box 4">4</div>
+          <div class="box 5">5</div>
+          <div class="box 5">6</div>
+          <div class="box 5">7</div>
+          <div class="box 5">8</div>
+        </div>
+      </section>
+      <section class="pseudo-elementos" id="pseudo-elementos">
+        <div class="line"></div>
+        <h2>pseudo elementos</h2>
+        <ul>
+          <li>referencia a partes de un elemento</li>
+          <li>añade un elemento html</li>
+          <li>comienzan con doble dos puntos (::)</li>
+        </ul>
+        <div class="line"></div>
+
+        <h2>first-letter</h2>
+        <p>
+          first-letter: agarra la primera letra y la podes modificar a tu gusto
+        </p>
+        <br />
+        <div class="container">
+          <p class="first-letter">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            autem distinctio qui doloremque voluptatum cupiditate fuga, quam
+            necessitatibus magnam. Beatae assumenda labore totam ipsa
+            repudiandae, provident autem eum harum ducimus?
+          </p>
+        </div>
+        <div class="line"></div>
+
+        <h2>first-line</h2>
+        <p>
+          first-line: agarra la primera linea y la podes modificar a tu gusto
+        </p>
+        <br />
+        <div class="container">
+          <p class="first-line">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+            autem distinctio qui doloremque voluptatum cupiditate fuga, quam
+            necessitatibus magnam. Beatae assumenda labore totam ipsa
+            repudiandae, provident autem eum harum ducimus? Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Saepe quo iusto nulla quas.
+            Animi quis repellendus placeat veniam tempora optio, excepturi id
+            quia nam temporibus molestias voluptatum tempore perspiciatis
+            blanditiis? Aperiam sequi dolorem dolor hic vero voluptatem
+            reiciendis architecto reprehenderit in ab asperiores inventore quo
+            et, cumque obcaecati consequuntur quasi minus explicabo veritatis
+            doloremque odio eligendi doloribus autem! Reprehenderit, aliquid.
+            Praesentium repellat odio provident sit magnam corporis eius libero
+            sequi placeat quae neque, rerum culpa ullam veniam, enim, laborum
+            illum! Itaque possimus voluptatibus iste libero eveniet distinctio
+            laborum iure rerum. Sequi quis dolorem voluptates, alias architecto
+            dolor at labore corporis consectetur fugiat animi eligendi? Maiores
+            beatae mollitia nulla tempore quae ex tempora hic voluptas
+            perferendis iste, minima asperiores libero maxime. Libero atque ab,
+            consequuntur maiores dolor, et modi nihil dolorem laudantium
+            voluptate illum, quam nesciunt debitis excepturi illo vitae beatae
+            qui. Corrupti recusandae officiis dicta consequuntur culpa omnis
+            labore eligendi.
+          </p>
+        </div>
+        <div class="line"></div>
+        <h2>before</h2>
+        <p class="before">i have a before</p>
+        <div class="line"></div>
+        <h2>after</h2>
+        <p class="after">i have a after</p>
+        <div class="line"></div>
+
+        <h2>before and after</h2>
+        <p class="after before">i have a before and after</p>
+        <div class="line"></div>
+        <h2>placeholder</h2>
+        <div class="container">
+          <input
+            type="text"
+            class="input-placeholder"
+            placeholder="soy un placeholder"
+          />
+        </div>
+        <div class="line"></div>
+        <h2>Bonus ❤</h2>
+        <p>cuando selecciones un elemento se va ver rosita</p>
+        <p>
+          el user.seleccion solo es nesesario si quremos que no se pueda copiar
+          nada asique tendria que estar comentado
+        </p>
+        <br />
+        <div class="container">
+          <img src="./assets/img/bonus.png" alt="" />
+        </div>
+      </section>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </main>
+    <footer></footer>
+  </body>
+</html>

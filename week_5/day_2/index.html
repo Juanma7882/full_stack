@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>clase 13</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="flex">
+      <h1>Animaciones y tranciones</h1>
+      <p>clase 13</p>
+    </header>
+    <main>
+      <section class="animaciones">
+        <div class="line"></div>
+        <h2>Transformaciones:translate</h2>
+        <ul>
+          <li>
+            <a
+              href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_animations"
+              >animaciones</a
+            >
+          </li>
+        </ul>
+        <div class="line"></div>
+
+        <h2>translate : x</h2>
+        <p>lo movi 500px en el eje x</p>
+        <div class="container">
+          <div class="box translatex"></div>
+        </div>
+        <p>le agregue un hover</p>
+        <div class="container">
+          <div class="box translatex-hover"></div>
+        </div>
+        <p>translate animado</p>
+        <div class="container">
+          <div class="box translatex-animado"></div>
+        </div>
+        <div class="line"></div>
+        <h2>Translate y</h2>
+        <div class="container">
+          <div class="box translate-y-animamdo"></div>
+        </div>
+        <div class="line"></div>
+        <h2>Translate x y</h2>
+        <div class="container">
+          <div class="box translate-x-y-animamdo"></div>
+        </div>
+        <div class="line"></div>
+        <h2>Rotate</h2>
+        <p>
+          rotate en el eje z o tambien se lo puede obiar solomente escribiendo
+          rotate
+        </p>
+        <div class="container">
+          <div class="box rotate-positive">+z</div>
+          <div class="box rotate-negative">-z</div>
+          <div class="box rotate-positivex">+x</div>
+          <div class="box rotate-negativex">-x</div>
+          <div class="box rotate-positivey">+y</div>
+          <div class="box rotate-negativey">-y</div>
+        </div>
+        <div class="line"></div>
+        <h2>Transformaciones: scale</h2>
+        <div class="container">
+          <div class="box scalex">eje-x</div>
+          <div class="box scaley">eje-y</div>
+          <div class="box scale-x-y">eje-x-y</div>
+        </div>
+        <div class="line"></div>
+        <h2>skew</h2>
+        <p>
+          skew significa torcer y utilizamos los grados o deg como unidad de
+          medida
+        </p>
+        <div class="container">
+          <div class="box skew-x">skew x</div>
+          <div class="box skew-y">skew y</div>
+          <div class="box skew-x-y">skew x y</div>
+        </div>
+      </section>
+      <section class="tranciones">
+        <div class="line"></div>
+        <h2>Tranciones</h2>
+        <ul>
+          <li>
+            <a href="https://blog.hubspot.com/website/animation-timing-function"
+              >enlace utili visual</a
+            >
+          </li>
+        </ul>
+        <div class="line"></div>
+        <p>
+          Tranciones : con la porpiedad transition podemos lograr que al pasar
+          el mouse por el elemento haga una animacion
+        </p>
+        <p>
+          recordemos que para los enlaces usamos a:hover para que cambien sus
+          estiulos al pasar el mouse por encima
+        </p>
+        <p>
+          :hover se puede utilizar con <strong> CUALQUIER </strong>elemento
+          sobre el cual quiesieramos ejecutar una <b>transicion</b> un div span
+          parrafo etc
+        </p>
+        <div class="line"></div>
+        <h2>duration</h2>
+        <div class="container">
+          <div class="box transition-duration">duracion</div>
+        </div>
+        <div class="line"></div>
+        <h2>transition timing function</h2>
+        <div class="container">
+          <div class="box transition-timing-funcion">timing</div>
+        </div>
+        <div class="line"></div>
+        <h2>transition delay</h2>
+        <p>
+          esta es la que estuvimos usando todo el tiempo le especificamos el
+          tiempo en el que se va ejecutar
+        </p>
+        <div class="container">
+          <div class="box transition-delay">delay</div>
+        </div>
+        <div class="line"></div>
+        <h2>transition shorthand</h2>
+        <p></p>
+        <div class="container">
+          <div class="box transition-shorthand">shorthand</div>
+        </div>
+      </section>
+      <section class="crear-animacion tranciones">
+        <div class="line"></div>
+        <h2>pasos para crear una animacion</h2>
+        <div class="line"></div>
+        <h2>1 caja vacia sin animar</h2>
+        <p></p>
+        <div class="container">
+          <div class="box">caja vacia</div>
+        </div>
+        <div class="line"></div>
+        <h2>2 creamos "movercaja" y la aplicamos dandole una duracion</h2>
+        <p></p>
+        <div class="container">
+          <div class="box movercaja">movercaja</div>
+        </div>
+        <div class="line"></div>
+        <h2>3 hacemos la animacion infinita</h2>
+        <p></p>
+        <div class="container">
+          <div class="box movercaja infinita">infinita</div>
+        </div>
+        <div class="line"></div>
+        <h2>4 hacemos a la animacion alternada</h2>
+        <p></p>
+        <div class="container">
+          <div class="box movercaja infinita alternada">alternada</div>
+        </div>
+        <div class="line"></div>
+        <h2>5 agregamos un delay de 3s al inicio</h2>
+        <p></p>
+        <div class="container">
+          <div class="box movercaja infinita alternada delay">delay</div>
+        </div>
+        <div class="line"></div>
+        <h2>6 agregamos un timing</h2>
+        <p></p>
+        <div class="container">
+          <div class="box movercaja infinita alternada delay timing">
+            timing
+          </div>
+        </div>
+        <div class="line"></div>
+        <h2>7 le cambiamos el estado al hover</h2>
+        <p>
+          en este caso tiene running y cuando se le pone el mause encima esta en
+          pauset <strong>pero hay otros estados tambien</strong>
+        </p>
+        <div class="container">
+          <div class="box movercaja infinita alternada delay timing paused">
+            paused
+          </div>
+        </div>
+        <div class="line"></div>
+        <h2>8 hacemos todo lo anterior pero en un shortime</h2>
+        <div class="container">
+          <div class="box animation-shortime">paused</div>
+          <!-- <div class="box pb">pb</div> -->
+        </div>
+        <div class="line"></div>
+      </section>
+    </main>
+    <footer>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
+  </body>
+</html>

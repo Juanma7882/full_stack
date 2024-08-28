@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0px;
+  background-color: black;
+  color: aliceblue;
+  /* border: red solid 1px; */
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header__title {
+  margin: 20px;
+  background: rgb(240, 150, 189);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 150, 189, 1) 0%,
+    rgba(120, 174, 237, 1) 100%
+  );
+  -webkit-background-clip: text; /* Para compatibilidad con WebKit (Safari, Chrome, etc.) */
+  background-clip: text; /* Clip del fondo al texto */
+  color: transparent;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.container_input {
+  border: 2px solid rgb(126, 124, 124);
+  border-radius: 10px;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.container_input:focus {
+  border: 2;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px 10px;
+}
+.container__buttons {
+  display: flex;
+  gap: 55px;
+}
+
+.container__task {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 30px;
+}
+
+.container__task--p {
+  padding: 20px;
+  width: 80%;
+  height: 20px;
+  border: 2px snow solid;
+  border-radius: 20px;
+  background: rgb(240, 150, 189);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 150, 189, 1) 0%,
+    rgba(120, 174, 237, 1) 100%
+  );
+  -webkit-background-clip: text; /* Para compatibilidad con WebKit (Safari, Chrome, etc.) */
+  background-clip: text; /* Clip del fondo al texto */
+  color: transparent;
+  padding: 20px 10px 40px 10px;
+  font-size: large;
+  font-weight: 600;
+}
+.container__add {
+  border: 2px solid green;
+  /* padding: 20px; */
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 5px 15px;
+}
+.container__add:active {
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 2px solid rgb(133, 173, 138);
+  color: rgb(106, 143, 106);
+}
+
+.container__delete {
+  border: 2px solid red;
+  padding: 5px 15px;
+}
+
+.bordeVioleta {
+  border: 2px solid rgb(30, 198, 30);
+}
+
+.container__delete:active {
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 2px solid rgb(79, 74, 74);
+  color: rgb(128, 114, 114);
+}

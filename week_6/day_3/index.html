@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>clase 17 GRID</title>
+  </head>
+  <body>
+    <header>
+      <h1>GRID</h1>
+      <p>
+        grid fue creado para hacer diseños mas conplejos de manera mas sinple
+        pero esto no quiere decir que grid vino a reenplazar a flex si no que es
+        una herramienta mas que podemos usar en nuestro desarrollo
+      </p>
+      <ul>
+        <li><a href="https://cssgridgarden.com/#es">juego de grid</a></li>
+        <li>
+          <a href="https://cssgrid-generator.netlify.app/"
+            >generador de grid
+          </a>
+        </li>
+        <li><a href="https://griddy.io/">generador de grid </a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="section">
+        <h2>como aplicar grid</h2>
+        <p>
+          para aplicar grid se nesesita colocar display:grid y con eso esta
+          activo grid. grid tiene muchas propiedades y puede llegar a ser una
+          herramienta muy potente si aprendemos a usarla
+        </p>
+        <h2>grid templates column</h2>
+        <div class="bg-secondary">
+          <div class="grid-column">
+            <div class="iten">elemento1</div>
+            <div class="iten">elemento2</div>
+            <div class="iten">elemento2</div>
+            <div class="iten">elemento2</div>
+            <div class="iten">elemento2</div>
+            <div class="iten">elemento2</div>
+            <div class="iten">elemento2</div>
+          </div>
+          <h2>grid row</h2>
+          <div class="grid-column gap">
+            <div class="iten">elemento1</div>
+            <div class="iten">elemento2</div>
+            <div class="iten">elemento1</div>
+            <div class="iten">elemento2</div>
+          </div>
+        </div>
+        <h2>grid templates rows</h2>
+        <p>
+          si lo dejamos en auto ocupara todo el espacio que pueda en este caso
+          use fraciones pero se pueden usar pixeles y mas cosas
+        </p>
+        <div class="grid-rows">
+          <div class="iten">elemento1</div>
+          <div class="iten">elemento2</div>
+          <div class="iten">elemento1</div>
+          <div class="iten">elemento2</div>
+        </div>
+        <h2>grid fr</h2>
+        <div class="bg-secondary">
+          <div class="grid-fr">
+            <div class="iten">iten 1</div>
+            <div class="iten">iten 2</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+          </div>
+        </div>
+        <h2>grid repeat</h2>
+        <div class="bg-secondary">
+          <div class="grid-repeat">
+            <div class="iten">iten 1</div>
+            <div class="iten">iten 2</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+          </div>
+        </div>
+        <h2>grid por areas</h2>
+        <p>
+          es posible indicar el nombre y la posicion concreta de cada area de la
+          cuadricula utilizar la propiedad <b>grid-templade-areas, </b> donde
+          debemos especificar el orden de las areas luego en cada iten hijo
+          utilizamos la propiedad <b>grid-area</b> para indicar el nombre del
+          area del que se trata
+        </p>
+        <div class="bg-secondary">
+          <div class="grid-areas">
+            <nav class="nav">nav</nav>
+            <header class="header">header</header>
+            <div class="sidebar">sidebar</div>
+            <section class="content">content</section>
+            <footter class="footer">footer</footter>
+          </div>
+        </div>
+        <h2>grid alineasion de contenido</h2>
+        <p>
+          se puede usar las misma propiedades que con flex por ejemplo justify
+          align space between etc
+        </p>
+        <h2>justify align</h2>
+        <div class="bg-secondary">
+          <div class="grid-j-items">
+            <div class="iten">iten 1</div>
+            <div class="iten">iten 2</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+          </div>
+        </div>
+        <h2>space arount , between etc</h2>
+        <div class="bg-secondary">
+          <div class="grid-j-content">
+            <div class="iten">iten 1</div>
+            <div class="iten">iten 2</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+          </div>
+        </div>
+        <h2>grid auto</h2>
+        <div class="bg-secondary">
+          <div class="grid-auto">
+            <div class="iten">iten 1</div>
+            <div class="iten">iten 2</div>
+            <div class="iten">iten 3</div>
+            <div class="iten">iten 4</div>
+          </div>
+        </div>
+        <h2>grid-column-start/end grid-row-start/end</h2>
+        <div class="bg-secondary">
+          <div class="grid-start-end">
+            <div class="item-pos">item1</div>
+            <div class="item-pos">item2</div>
+            <div class="item-pos">item3</div>
+            <div class="item-pos">item4</div>
+            <div class="item-pos">item5</div>
+            <div class="item-pos">item6</div>
+          </div>
+        </div>
+        <h2>short column y row</h2>
+        <div class="bg-secondary">
+          <div class="grid-start-end">
+            <div class="item-short">item1</div>
+            <div class="item-short">item2</div>
+            <div class="item-short">item3</div>
+            <div class="item-short">item4</div>
+            <div class="item-short">item5</div>
+            <div class="item-short">item6</div>
+            <!-- https://via.placeholder.com/100 -->
+          </div>
+        </div>
+        <h2>grid area super simplificado</h2>
+        <div class="bg-secondary">
+          <div class="grid-start-end">
+            <div class="item-area">item1</div>
+            <div class="item-area">item2</div>
+            <div class="item-area">item3</div>
+            <div class="item-area">item4</div>
+            <div class="item-area">item5</div>
+            <div class="item-area">item6</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

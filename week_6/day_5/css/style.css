@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.section {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../img/kimi.jpg) no-repeat center/ cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+.section-form {
+  height: 404px;
+  width: 250px;
+  background-color: red;
+  border-radius: 1rem;
+}
+/* section-form */
+.img-login {
+  height: 40%;
+  width: 100%;
+  background-size: cover;
+}
+.form-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.span-login {
+  font-weight: 800;
+  font-size: large;
+  color: aliceblue;
+}
+input {
+  text-decoration: none;
+  border: 0;
+  margin: 0;
+}
+input:active {
+  margin: 0%;
+  padding: 0;
+}

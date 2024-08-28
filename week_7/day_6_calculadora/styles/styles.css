@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+  color: white;
+}
+
+:root {
+  font-family: "Poppins";
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(11, 10, 9);
+}
+
+.calculadora {
+  width: 300px;
+  height: 400px;
+  background-color: rgb(11, 11, 95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+
+  flex-direction: column;
+}
+.calculadora__pantalla {
+  height: 20%;
+  width: 80%;
+  background-color: rgb(83, 27, 100);
+  padding-top: 20px;
+  padding: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+}
+.calculadora__botones {
+  height: 60%;
+  width: 80%;
+  background-color: rgb(41, 44, 124);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.botones {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(19, 17, 52);
+  border-radius: 20%;
+}

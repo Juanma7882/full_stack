@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  /* border: 3px solid red; */
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    125deg,
+    rgb(143, 143, 232),
+    rgb(234, 156, 156),
+    rgb(123, 227, 123)
+  );
+}
+.formulario h1 {
+  padding: 20px;
+}
+input {
+  width: 100%;
+  outline: none;
+  background: none;
+  border: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
+
+.formulario {
+  background: linear-gradient(
+    125deg,
+    rgb(143, 143, 232),
+    rgb(234, 156, 156),
+    rgb(123, 227, 123)
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 1rem;
+  gap: 10px;
+  box-shadow: 10px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.datos,
+.recuperar-contraseña,
+button {
+  margin: 10px;
+}
+
+.botton {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 1rem;
+  border: none;
+  background: linear-gradient(
+    125deg,
+    rgb(143, 143, 232),
+    rgb(234, 156, 156),
+    rgb(123, 227, 123)
+  );
+  font-size: large;
+  font-weight: 500;
+}
+button:hover {
+  border: 1px solid rgb(143, 143, 232);
+  box-shadow: 4px 4px 4px 4px rgba(145, 126, 126, 0.2);
+}
+.button a:hover,
+.recuperar-contraseña a:hover {
+  text-decoration: underline;
+}
+.formulario .datos {
+  position: relative;
+  margin-bottom: 30px;
+  border-bottom: 3px solid rgb(143, 143, 232);
+}
+.datos label {
+  pointer-events: none;
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+.datos input:focus ~ label,
+.datos input:valid ~ label {
+  top: -20px;
+}

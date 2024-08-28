@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  margin: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+
+.icon {
+  width: 60px;
+}
+.header {
+  background-color: aqua;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  /* box-shadow: ; */
+  position: fixed;
+  z-index: 1;
+}
+
+.navbar {
+  display: flex;
+}
+.navbar i {
+  font-size: 36px;
+  display: none;
+}
+#toggle-menu {
+  display: none;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 100px;
+}
+.navbar-link {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* main  */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hero {
+  display: flex;
+  margin-top: 80px;
+  padding: 70px 0px;
+  width: 90%;
+  justify-content: space-around;
+}
+.hero-presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.hero-presentation h1 {
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.hero-presentation p {
+  font-weight: 300;
+  font-size: 14px;
+  max-width: 350px;
+  color: black;
+}
+.button-container a {
+  text-decoration: none;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.primary-btn {
+  background-color: black;
+  color: white;
+}
+.alt-btn {
+  background-color: white;
+  color: black;
+}
+.hero-img {
+  width: 475px;
+}
+
+/* about  */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 850px;
+  padding: 60px 0px;
+  font-weight: 300px;
+  text-align: center;
+}
+/* cards section  */
+
+#cards-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 70px 0px;
+  width: 95%;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 300px;
+}
+.card i {
+  font-size: 50px;
+}
+.card h3 {
+  font-size: 20px;
+}
+
+/* contac */
+.black-bg {
+  background-color: black;
+}
+#contact {
+  display: flex;
+  padding: 70px 30px;
+  width: 100%;
+  justify-content: space-around;
+  color: white;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 30px;
+}
+.contact-info-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+.info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.info-column h3 {
+  font-size: 24px;
+}
+
+.info-column p,
+.info-column a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-column a {
+  text-decoration: none;
+  color: white;
+}
+iframe {
+  height: 350px;
+  width: 400px;
+}
+footer {
+  color: red;
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  font-size: 20px;
+}
+
+@media (max-width: 992px) {
+  .hero-presentation {
+    text-align: center;
+    width: 98%;
+    align-items: center;
+  }
+  .hero-presentation h1 {
+    display: block;
+    width: 100%;
+  }
+  .hero-presentation p {
+    max-width: 80%;
+    font-size: 16px;
+  }
+  .button-container {
+    justify-content: center;
+  }
+  .hero-img {
+    display: none;
+  }
+  #about {
+    font-size: 15px;
+  }
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-container {
+    gap: 50px;
+  }
+  .info-container h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar ul {
+    background-color: white;
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+    transition: all 0.4 ease-out;
+  }
+  .navbar i {
+    display: block;
+  }
+  #toggle-menu:checked ~ .navbar-list {
+    transition: all 0.4 ease-out;
+    transform: translateX(0%);
+  }
+  .hero-presentation p {
+    max-width: 100%;
+  }
+  .contact-info-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+  .info-column {
+    align-items: center;
+  }
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
+}

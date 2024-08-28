@@ -1,0 +1,326 @@
+header {
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animaciones {
+  width: 90%;
+}
+.container {
+  background-color: #282828;
+  display: flex;
+  padding: 16px;
+  border-radius: 1rem;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/* ============= translate =========== */
+.translatex {
+  transform: translatex(500px);
+}
+
+.translatex-hover:hover {
+  transform: translatex(500px);
+}
+
+/* con el keyframes le damos el toque para animar correctamente  */
+@keyframes translatex-animado {
+  from {
+    transform: translatex(0);
+  }
+  to {
+    transform: translatex(500px);
+    background-color: rgb(66, 5, 66);
+  }
+}
+.translatex-animado {
+  /* el translate tiene que tener el "nombre" y el "tiempo" como minimo  */
+  animation: translatex-animado 3s infinite alternate;
+}
+
+/*====================== translate en y ============================== */
+@keyframes translate-y-animamdo {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(20px);
+    background-color: aqua;
+  }
+}
+.translate-y-animamdo {
+  animation: translate-y-animamdo 2s infinite alternate;
+}
+/* ===================== translate en x y =============================================== */
+@keyframes translate-x-y-animamdo {
+  /* en caso que arranque de 0 esto se puede obiar */
+  /* from {
+    transfor: translate(0%);
+  } */
+  to {
+    transform: translate(500px, 15px);
+  }
+}
+.translate-x-y-animamdo {
+  animation: translate-x-y-animamdo 2s infinite alternate;
+}
+/* ============== Transformaciones:rotate ================================= */
+@keyframes rotate-positive {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-positive {
+  animation: rotate-positive 2s infinite;
+}
+
+@keyframes rotate-negative {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+.rotate-negative {
+  animation: rotate-negative 2s infinite;
+}
+/* ================ rotate eje x  */
+@keyframes rotate-positivex {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotatex(360deg);
+  }
+}
+.rotate-positivex {
+  animation: rotate-positivex 2s infinite;
+}
+
+@keyframes rotate-negativex {
+  from {
+    transform: rotatex(0deg);
+  }
+  to {
+    transform: rotatex(-360deg);
+  }
+}
+.rotate-negativex {
+  animation: rotate-negativex 2s infinite;
+}
+/* ================ rotate eje y  */
+@keyframes rotate-positivey {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
+.rotate-positivey {
+  animation: rotate-positivey 2s infinite;
+}
+
+@keyframes rotate-negativey {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotatey(-360deg);
+  }
+}
+.rotate-negativey {
+  animation: rotate-negativey 2s infinite;
+}
+/* ================= Transformacion scale x =========== */
+@keyframes scalex {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(1.23);
+    background-color: crimson;
+  }
+}
+.scalex {
+  animation: scalex 2s infinite;
+}
+/*  Transformacion scale y =========== */
+@keyframes scaley {
+  from {
+    transform: scaley(1);
+  }
+  to {
+    transform: scaley(1.3);
+    background-color: aqua;
+  }
+}
+.scaley {
+  animation: scaley 2s infinite;
+}
+/*  Transformacion scale x y =========== */
+@keyframes scale-x-y {
+  from {
+    transform: scaleX(1) scaleY(1);
+  }
+  to {
+    transform: scaleX(1.4) scaleY(1.4);
+    background-color: rgb(74, 223, 168);
+  }
+}
+.scale-x-y {
+  animation: scale-x-y 2s infinite;
+}
+/* ============== skew =========================== */
+/* ================ skew-x =============== */
+@keyframes skew-x {
+  from {
+    transform: skewX(0);
+  }
+  to {
+    transform: skewX(20deg);
+    background-color: chartreuse;
+  }
+}
+.skew-x {
+  animation: skew-x 2s infinite alternate;
+}
+/* ================ skew-y =============== */
+@keyframes skew-y {
+  from {
+    transform: skewy(0);
+  }
+  to {
+    transform: skewy(20deg);
+    background-color: chartreuse;
+  }
+}
+.skew-y {
+  animation: skew-y 2s infinite alternate;
+}
+/* ================ skew-x-y =============== */
+@keyframes skew-x-y {
+  from {
+    transform: skewy(0), skewy(0);
+  }
+  to {
+    transform: skewy(15deg), skewX(15deg);
+    background-color: chartreuse;
+  }
+}
+.skew-x-y {
+  animation: skew-y 2s infinite alternate;
+}
+.tranciones {
+  width: 90%;
+}
+/* ================ ==================================== */
+.transition-duration {
+  transition-property: all;
+  transition-duration: 2s;
+}
+.transition-duration:hover {
+  background-color: aquamarine;
+  width: 120px;
+  height: 120px;
+  transition-duration: 3s;
+}
+/* ========= transition-timing-funcion  =============== */
+.transition-timing-funcion {
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+.transition-timing-funcion:hover {
+  background-color: aquamarine;
+  transform: rotate(360deg);
+}
+/* ========= transition-delay  =============== */
+.transition-delay {
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1s;
+}
+.transition-delay:hover {
+  background-color: skyblue;
+}
+/* ============ shorthand ============= */
+.transition-shorthand {
+  /* transition property | transition duration | transition delay (opcional) | timing function*/
+  transition: all 2s 1s ease;
+}
+.transition-shorthand:hover {
+  height: 120px;
+  width: 120px;
+  background-color: skyblue;
+}
+
+/* ===================== repaso animacion  ======================================== */
+
+@keyframes movercaja {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+.movercaja {
+  animation-name: movercaja;
+  animation-duration: 2s;
+}
+/* =============================== */
+.infinita {
+  animation-iteration-count: infinite;
+}
+/* ============= */
+.alternada {
+  animation-direction: alternate;
+}
+/* ==================== */
+
+.delay {
+  animation-delay: 3s;
+}
+/* ================= */
+.timing {
+  animation-timing-function: ease-in-out;
+}
+/* =============== */
+
+.paused {
+  animation-play-state: running;
+}
+.paused:hover {
+  animation-play-state: paused;
+}
+/* ============= 8 =============== */
+
+@keyframes animation-shortime {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+.animation-shortime {
+  animation: animation-shortime 2s 0.1s infinite alternate ease-in-out;
+}
+.animation-shortimeee:hover {
+  animation-play-state: paused;
+}
+/* ========================================= */

@@ -1,0 +1,132 @@
+*::selection {
+  user-select: none;
+  background-color: pink;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pseudo-clases {
+  width: 80%;
+  text-align: start;
+}
+.container {
+  display: flex;
+  gap: 10px;
+}
+/* ============ hover =========== */
+.hover {
+  background-color: rgb(72, 255, 194);
+}
+.hover:hover {
+  background-color: bisque;
+}
+.hover-transicion {
+  background-color: aquamarine;
+  transition: 0.5s;
+}
+.hover-transicion:hover {
+  background-color: bisque;
+}
+.hover-others {
+  background-color: aquamarine;
+  color: black;
+  transition: all 0.5s;
+}
+.hover-others:hover {
+  background-color: black;
+  color: aquamarine;
+  font-weight: 900;
+  font-size: 30px;
+}
+/* ================= active =========================================== */
+.active {
+  color: blueviolet;
+}
+.active:active {
+  color: aqua;
+  text-decoration: none;
+}
+/* ============ = visited ========== */
+
+.visited {
+  color: aqua;
+}
+.visited:visited {
+  color: chartreuse;
+}
+
+/* ============= link  ================================== */
+
+.link:link {
+  color: rgb(20, 193, 115);
+}
+/* =========== focus-input ========================== */
+
+.focus-input {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  transition: all 0.5s;
+}
+.focus-input:focus {
+  background-color: aqua;
+}
+
+/* =========== first-child ========================== */
+.container_con_hijos .box:first-child {
+  background: crimson;
+}
+/* =========== last-child ========================== */
+.container_con_final .box:last-child {
+  background: crimson;
+}
+/* ==================== first-of-type   ===========  */
+.first-type p:first-of-type {
+  background-color: aquamarine;
+}
+.nth-child-odd .box:nth-child(odd) {
+  background-color: aqua;
+}
+.nth-child-even .box:nth-child(even) {
+  background-color: aqua;
+}
+.nth-child-number .box:nth-child(4) {
+  background-color: crimson;
+}
+.nth-child-number-n .box:nth-child(3n) {
+  background-color: crimson;
+}
+.nth-child-number-n-number .box:nth-child(3n + 4) {
+  background-color: crimson;
+}
+
+/* ========== pseudo elementos ======================== */
+.first-letter::first-letter {
+  background-color: crimson;
+}
+.first-line::first-line {
+  background-color: rgb(23, 23, 70);
+}
+.before::before {
+  content: "❤  ";
+}
+.after::after {
+  content: " ❤";
+}
+.input-placeholder {
+  padding: 10px;
+  background-color: gray;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+}
+
+.input-placeholder::placeholder {
+  color: white;
+  background-color: crimson;
+}
